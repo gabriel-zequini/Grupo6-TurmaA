@@ -362,7 +362,7 @@ public class jogo {
                     String ValorDaResposta2 = ((List<String>) alternativas2).get(respostaInt2);
 
                     if (ValorDaResposta2.equals(alternativaCorreta2)) {
-                                System.out.println("\nComo "+nome+" tinha anos de experiencia no exercito, ele acerta apenas um tiro no urso, na cabeça, derrubando imediatamente...");
+                                System.out.println("\nComo "+nome+" tinha anos de experiência no exército, ele acerta apenas um tiro no urso, na cabeça, derrubando imediatamente...");
                         respostaCerta2 = true; 
                         contador6 = contador6 +1;
                         
@@ -379,8 +379,8 @@ public class jogo {
 
                 Collection<String> alternativas3 = new ArrayList<>();
                 alternativas3.add("Gritar por Socorro");
-                alternativas3.add("Quebrar a CPU da Tranca");
-                alternativas3.add("Tentar entortar a Barra de Ferro da Cela");
+                alternativas3.add("Quebrar a CPU da Tranca com uma Barra de Ferro");
+                alternativas3.add("Tentar Entortar a Barra de Ferro da Cela");
 
 
                     String alternativaCorreta3 = "Quebrar a CPU da Tranca";
@@ -466,16 +466,17 @@ public class jogo {
                     System.out.println("\n---- 9º FASE - O Avião ----");
                     
             int contador9 = 0;
-                                System.out.println("\nApós conseguir entrar no avião, ele tem que resolver mais um desafio para conseguir ligar o sistema da aeronave e ligar os motores...");
-            String questao5 = "\nPara ligar o sistema do avião você precisa descobrir qual a estrutura de uma CPU?";
+                                System.out.println("\nApós conseguir entrar no avião, ele tem que resolver mais um desafio para conseguir ligar o sistema da aeronave e ligar os motores."
+                                        + "\nEle vê um papel com um código...");
+            String questao5 = "\nPara ligar o sistema do avião, ele precisa digitar o código 88769 em número binário...";
 
             Collection<String> alternativas5 = new ArrayList<>();
-            alternativas5.add("Barramentos, Mémoria, Entrada e Saída");
-            alternativas5.add("Unidade de controle, Barramentos Interno, Resgistradores e Unidade lógica");
-            alternativas5.add("Mémoria, Unidade Lógica, Registradores");
+            alternativas5.add("1111011011");
+            alternativas5.add("1100111000");
+            alternativas5.add("1111111111");
 
 
-                String alternativaCorreta5 = "Unidade de controle, Barramentos Interno, Resgistradores e Unidade lógica";
+                String alternativaCorreta5 = "1111111111";
 
             boolean respostaCerta5 = false;
 
@@ -491,13 +492,13 @@ public class jogo {
                     );
                 }
 
-                System.out.println("DICA! Tem 4 coisas um estrutura...");
+                System.out.println("DICA! Tem que realizar a divisão sucessiva por 2. O resultado da conversão será dado pelo último quociente e o agrupamento dos restos de divisão será o número binário.");
                 String resposta5 = entrada.nextLine();
                 switch (resposta5) {
                 case "0":
                 case "1":
                 case "2":
-                    int respostaInt5 = Integer.parseInt(resposta2);
+                    int respostaInt5 = Integer.parseInt(resposta5);
                     String ValorDaResposta5 = ((List<String>) alternativas5).get(respostaInt5);
 
                     if (ValorDaResposta5.equals(alternativaCorreta5)) {
@@ -515,7 +516,7 @@ public class jogo {
                                         + "\nAs criaturas vão correndo em direção ao avião, como se estivessem a dias sem comer carne, entâo "+nome+" percebe que tem que pensar rápido no seu "
                                         + "\npróximo passo, porque isso poderia fazer com que ele perdesse a vida, momentos antes de ver sua fámilia... ");
                                 
-                String questao6 = "O único jeito de sair vivo do avião é: ";
+                String questao6 = "\nO único jeito de sair vivo do avião é: ";
 
                 Collection<String> alternativas6 = new ArrayList<>();
                 alternativas6.add("Não abrir as portas do avião e esperar as criaturas irem embora");
