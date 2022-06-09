@@ -1,1 +1,0 @@
-# Grupo6-TurmaA
