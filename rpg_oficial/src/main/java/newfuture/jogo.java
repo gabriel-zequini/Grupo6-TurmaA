@@ -10,6 +10,12 @@ public class jogo {
     
     public static void main(String[] args) {
         
+        //Análise e Desenvolvimento de Sistemas - TURMA A
+        //Nomes: 
+        //Gabriel Zequini Falco
+        //Gabriel Pereira
+        //Giovanne Moreira
+        //João Pedro 
         
         Scanner entrada = new Scanner (System.in);
         
@@ -95,7 +101,7 @@ public class jogo {
                                                  + "\nem uma cidade pequena na California, ele teve que ir em um banker do exército na cidade que ele estava e ficar lá sozinho "
                                                  + "\n e longe de seu pai e seu irmão, até receber ordens para poder sair. ");
                                          
-                                       System.out.println("\n3 anos depois de 2030, O banker que "+nome+" estava sobrevivendo, começa a fazer um barulho como se fosse um alarme, "+nome+" "
+                                       System.out.println("\n   3 anos depois de 2030, O banker que "+nome+" estava sobrevivendo, começa a fazer um barulho como se fosse um alarme, "+nome+" "
                                                  + "\nsobe as escadas rapidamente em seu banker que tinha cerca de 3 andares, quando ele chega no ultimo andar do banker mais proximo a superficie "
                                                  + "\nda terra, sobe um monitor de video bem grande como se fosse uma televisão de alta tecnologia, e começa a passar um vídeo do presidente dos EUA "
                                                  + "\ndizendo com que a radiação tinha acabado na maior parte do mundo e que as pessoas que sobreviveram poderiam sair do banker e avisou que o mundo "
@@ -174,7 +180,7 @@ public class jogo {
 			
 			case "2":
 				System.out.println("\nEle percebe que o único jeito de entrar é usando a máscara química, então ele pega a máscara na mochila, coloca em seu rosto e consegue passar"
-                                        + "\n pela área infectada...");
+                                        + "\npela área infectada...");
 				acertou1 = true;
 				
 				contador1 = contador1 +1;
@@ -379,11 +385,11 @@ public class jogo {
 
                 Collection<String> alternativas3 = new ArrayList<>();
                 alternativas3.add("Gritar por Socorro");
-                alternativas3.add("Quebrar a CPU da Tranca com uma Barra de Ferro");
+                alternativas3.add("Quebrar a CPU da Tranca chutando");
                 alternativas3.add("Tentar Entortar a Barra de Ferro da Cela");
 
 
-                    String alternativaCorreta3 = "Quebrar a CPU da Tranca";
+                    String alternativaCorreta3 = "Quebrar a CPU da Tranca chutando";
 
                 boolean respostaCerta3 = false;
 
@@ -416,7 +422,7 @@ public class jogo {
                             System.out.println("\n---- 8º FASE - Não Confie em Ninguém ----");
         int contador8 = 0;
         
-                                System.out.println("\nApós sair da cela, ele percebe que estava em uma casa “simples” porém grande, ao olhar o relógio e o calendário, ele vê que "
+                                System.out.println("\n  Após sair da cela, ele percebe que estava em uma casa “simples” porém grande, ao olhar o relógio e o calendário, ele vê que "
                                         + "\nficou quase 24 horas desmaiado no cativeiro, desmaiado."+nome+" sobe as escadas,pois a cela ficava no porão da casa e ele percebe que tem"
                                         + "\n7 sobreviventes vivendo no local, e que provavelmente não tinham boas intenções com ele, já que podiam pegar recursos com a família em "
                                         + "\ntroca da vida dele."+nome+" olha pra fora da casa pra saber onde ela estava localizada e percebe que estava em uma fazenda, com "
@@ -509,7 +515,7 @@ public class jogo {
                         System.out.println("\n---- 10º FASE - Em fim, Paz... ----");
                         int contador10 = 0;
                 
-                                System.out.println("\n"+nome+" pousa o avião em um aeroporto abandonado perto de onde estava o banker onde seu pai e irmão estão, quando ele sai do avião "
+                                System.out.println("\n  "+nome+" pousa o avião em um aeroporto abandonado perto de onde estava o banker onde seu pai e irmão estão, quando ele sai do avião "
                                         + "\nvê uma movimentação estranha um pouco distante dele porém percebe que perceberam o avião pousando e ja estavam indo na direção dele. Quando elas"
                                         + "\nestão chegando perto ele vê que são mais animais que sofreram mutações pela radiação, um rato com tamanho de um leão, com dentes afiados, pele queimada"
                                         + "\ne com a boca ensanguentada provavelmente de outras vítimas, e um lobo com a parte branca do olho vermelha, dentes afiados e com sangue igual o rato. "
@@ -552,7 +558,10 @@ public class jogo {
                         if (ValorDaResposta6.equals(alternativaCorreta6)) {
                                 System.out.println("\nEntão ele pega o Fuzil, abre a porta do avião e aperta o gatilho com a arma apontada para as duas criaturas, conseguindo mata-las. Depois"
                                         + "\ndisso ele volta pro avião pega sua mochila e vai correndo em direção ao banker que estava seu irmão e pai. Como o banker era relacionado a ele, a "
-                                        + "\na senha da porta era o número binário da data de seu nascimento, então ele abre o banker e finalmente reecontra seu pai e seu irmão");
+                                        + "\na senha da porta era o número binário da data de seu nascimento, então ele abre o banker e finalmente reecontra seu pai e seu irmão, e um momento "
+                                        + "\nde paz nesse novo mundo selvagem...");
+                                
+                                        System.out.println("\nFIM DE JOGO!!! OBRIGADO POR JOGAR SOBREVIVENTE... ATÉ A PRÓXIMA.");
                             respostaCerta6 = true; 
                             contador10 = contador10 +1;
 
@@ -571,7 +580,7 @@ public class jogo {
                     } while (!respostaCerta6 && contador10 < 2);
 
                     } else{ 
-                        System.out.println("\nO avião começa a pifar.");
+                        System.out.println("\nO avião começa a pifar...Game over!!!");
                         contador9 = contador9 +1;
                     }
 
@@ -585,7 +594,7 @@ public class jogo {
                 } while (!respostaCerta5 && contador9 < 2); 
 
                 } else{ 
-                    System.out.println("\nOs saqueadores pegam ele novamente e amarram e prendem em uma cela. ");
+                    System.out.println("\nOs saqueadores pegam ele novamente e amarram e prendem em uma cela. Game over!!!");
                     contador8 = contador8 +1;
                 }
 
@@ -598,7 +607,7 @@ public class jogo {
             } while (!respostaCerta4 && contador8 < 2);
 
                         } else{ 
-                            System.out.println("\n"+nome+" chamou muita atenção e morreu!");
+                            System.out.println("\n"+nome+" chamou muita atenção e morreu! Game over!!!");
                             contador7 = contador7 +1;
                         }
 
@@ -612,7 +621,7 @@ public class jogo {
                     } while (!respostaCerta3 && contador7 < 2);
 
                     } else{ 
-                        System.out.println("\n"+nome+" não conseguiu correr ou matar a criatura  e morreu!");
+                        System.out.println("\n"+nome+" não conseguiu sobreviver... Game over!!!");
                         contador6 = contador6 +1;
                     }
 
@@ -626,7 +635,7 @@ public class jogo {
                 } while (!respostaCerta2 && contador6 < 2); 
 
                 } else{ 
-                    System.out.println("\nEsse objeto não é o correto! Game over! ");
+                    System.out.println("\nEsse objeto não é o correto! Game over!!! ");
                     contador5 = contador5 +1;
                 }
 
@@ -643,7 +652,7 @@ public class jogo {
                 }
         
                 }else { 
-			System.out.println("Isso não funcionou!");
+			System.out.println("Isso não funcionou! Game over!!!");
 		}
                         
                         
